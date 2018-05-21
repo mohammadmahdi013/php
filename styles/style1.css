@@ -1,0 +1,173 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face{
+	font-family: 'iransans';
+	src: url(../fonts/IranianSans.eot) format('eot'),
+		url(../fonts/IranianSans.ttf) format('ttf'),
+		url(../fonts/IranianSans.woff) format('woff');
+}
+body{
+	direction: rtl;
+}
+header{
+	width: 970px;
+	height: 200px;
+	margin: auto;
+	background-image: url(../images/header-image.png);
+}
+
+
+header div{
+	background-color: #000000;
+	opacity: 0.8;
+	
+	
+}
+header h1{
+	color: #ffffff;
+	font-family: iransans;
+	padding: 10px 20px 0 0;
+}
+nav{
+	width: 970px;
+	margin: 10px auto 0;
+	
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav li {
+    float: right;
+}
+
+nav li a {
+	font-family: iransans;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+.main{
+	direction: rtl;
+	width: 970px;
+	height: 420px;
+	margin: 5px auto 5px;
+
+}
+
+.content{
+	width: 710px;
+	float: left;
+}
+.sidebar{
+	
+	width: 250px;
+	height: 420px;
+	float: right;
+}
+.sidebar ul{
+	list-style-type: none;
+	padding-right: 10px;
+	color: #000000;
+}
+.sidebar ul li {
+	font-family: iransans;
+}
+
+.sidebar ul li a{
+	display: block;
+	text-decoration: none;
+	
+}
+.sidebar ul li a:hover{
+	background-color: #333;
+	color: white;
+}
+.content article p{
+	font-family: iransans;
+	text-indent: 15px;
+	
+}
+.content article img{
+	width: 150px;
+	height: 150px;
+	display: block;
+	margin: auto;
+	
+}
+footer{
+	width: 970px;
+	height: 110px;
+	margin: 10px auto 10px;
+	clear: both;
+	background: linear-gradient(to top, #000000 3%, #000036 98%);
+}
+footer div p{
+	font-family: iransans;
+	color: aliceblue;
+	text-align: center;
+	padding-top: 20px;
+	
+}
+footer ul li {
+	display: inline;
+}
+footer img{
+	width: 40px;
+	height: 40px;
+	float: left;
+	padding: 6px 0 0 10px;
+
+}
+
+#to_top{
+	position: fixed;
+	right:-100px;;
+	bottom: 10px;
+	cursor: pointer;
+}
+
+@media screen and (max-width:768px)	{
+
+	header{
+		width: 100%;
+		background-image: url('../images/header-image - min.png');
+	}
+	header h1{
+		font-size: 25px;
+	}
+
+	nav{
+		width: 100%;
+	}
+	.main{
+		width: 100%;
+	}
+	
+	.content{
+		width: 100%;
+	}
+	.sidebar{
+	display: none;
+	}
+
+	footer{
+		width: 100%;
+	}
+
+}
